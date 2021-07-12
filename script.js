@@ -10,6 +10,10 @@ for(let i = 0; i < SQUARES; i++) {
 
   square.addEventListener('mouseout', () => removeColor(square))
 
+  square.addEventListener('touchstart', () => setColor(square))
+
+  square.addEventListener('touchend', () => removeColor(square))
+
   container.appendChild(square)
 }
 
